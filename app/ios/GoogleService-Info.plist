@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1098784225996-1vek1lf29lu7uv6t928pirsrceu42n8t.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1098784225996-1vek1lf29lu7uv6t928pirsrceu42n8t</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>1098784225996-b2j3a4dtfslkcoo9l34kcntlqd18oob6.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDGe94ucojml50d0np20WXXVKyePV6ZGuA</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1098784225996</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.crossCare</string>
+	<key>PROJECT_ID</key>
+	<string>crosscare-b49f5</string>
+	<key>STORAGE_BUCKET</key>
+	<string>crosscare-b49f5.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1098784225996:ios:fa72defef3e701d6ae2069</string>
+	<key>DATABASE_URL</key>
+	<string>https://crosscare-b49f5.firebaseio.com</string>
+</dict>
+</plist>

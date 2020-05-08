@@ -1,0 +1,17 @@
+{
+  "name": "crossCare",
+  "displayName": "crossCare",
+  "expo": {
+    "name": "crossCare",
+    "slug": "crossCare",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

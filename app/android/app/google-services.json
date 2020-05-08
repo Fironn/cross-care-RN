@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1098784225996",
+    "firebase_url": "https://crosscare-b49f5.firebaseio.com",
+    "project_id": "crosscare-b49f5",
+    "storage_bucket": "crosscare-b49f5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1098784225996:android:9b4483cc1529495aae2069",
+        "android_client_info": {
+          "package_name": "com.crosscare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1098784225996-b2j3a4dtfslkcoo9l34kcntlqd18oob6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.crosscare",
+            "certificate_hash": "7978633356f74cd480a7560dfa8ee69344fc97a6"
+          }
+        },
+        {
+          "client_id": "1098784225996-eb7nv2ckse0r43p9jo20n0eatsbjfvdf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9Cnac0PYMHceRBBpgrwzZZ_n_gFCiFuI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1098784225996-eb7nv2ckse0r43p9jo20n0eatsbjfvdf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
