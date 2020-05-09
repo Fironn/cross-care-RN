@@ -6,7 +6,6 @@ import android.net.Uri;
 
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
-import co.apptailor.googlesignin.RNGoogleSigninPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -29,7 +28,8 @@ import java.util.List;
 import javax.annotation.Nullable;
 
 // add
-import co.apptailor.googlesignin.RNGoogleSigninPackage; 
+// import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
+// import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
 
 public class MainApplication extends Application implements ReactApplication {
   private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
@@ -47,6 +47,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       List<ReactPackage> packages = new PackageList(this).getPackages();
       packages.add(new ModuleRegistryAdapter(mModuleRegistryProvider));
+      // packages.add(new MainReactPackage());
+      // packages.add(new ReactNativeFirebaseAppPackage());
+      // packages.add(new ReactNativeFirebaseAuthPackage());
       return packages;
     }
 

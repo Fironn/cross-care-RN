@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Text, Button } from 'react-native-elements';
 // import '../component/onGoogleButtonPress.js';
@@ -8,6 +8,7 @@ import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import { Col, Row, Grid } from "react-native-easy-grid";
 
 function HomeScreen({ route, navigation }) {
+
     return (
         <SafeAreaView
             style={{ flex: 1 }}
