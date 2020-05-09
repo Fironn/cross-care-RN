@@ -27,10 +27,6 @@ import java.util.Arrays;
 import java.util.List;
 import javax.annotation.Nullable;
 
-// add
-// import io.invertase.firebase.auth.ReactNativeFirebaseAuthPackage;
-// import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
-
 public class MainApplication extends Application implements ReactApplication {
   private final ReactModuleRegistryProvider mModuleRegistryProvider = new ReactModuleRegistryProvider(
     new BasePackageList().getPackageList(),
@@ -48,8 +44,6 @@ public class MainApplication extends Application implements ReactApplication {
       List<ReactPackage> packages = new PackageList(this).getPackages();
       packages.add(new ModuleRegistryAdapter(mModuleRegistryProvider));
       // packages.add(new MainReactPackage());
-      // packages.add(new ReactNativeFirebaseAppPackage());
-      // packages.add(new ReactNativeFirebaseAuthPackage());
       return packages;
     }
 

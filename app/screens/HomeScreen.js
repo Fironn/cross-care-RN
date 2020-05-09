@@ -1,13 +1,42 @@
 import React, { useState, useEffect } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Text, Button } from 'react-native-elements';
-// import '../component/onGoogleButtonPress.js';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 import { Col, Row, Grid } from "react-native-easy-grid";
 
+import auth from '@react-native-firebase/auth';
+import SignInScreen from '../component/SignInScreen';
+import SignOutScreen from '../component/SignOutScreen';
+
 function HomeScreen({ route, navigation }) {
+
+    // Set an initializing state whilst Firebase connects
+    const [initializing, setInitializing] = useState(true);
+    const [user, setUser] = useState();
+
+    // Handle user state changes
+    function onAuthStateChanged(user) {
+        setUser(user);
+        if (initializing) setInitializing(false);
+    }
+
+    useEffect(() => {
+        const subscriber = auth().onAuthStateChanged(onAuthStateChanged);
+        return subscriber; // unsubscribe on unmount
+    }, []);
+
+    if (initializing) return null;
+
+    if (!user) {
+        return (
+            <View>
+                <Text>Login</Text>
+                <SignInScreen />
+            </View>
+        );
+    }
 
     return (
         <SafeAreaView
@@ -24,14 +53,12 @@ function HomeScreen({ route, navigation }) {
                         <Text h1 h1Style={styles.h1}>Cross</Text>
                         <Text h1 h1Style={styles.h1}>Care</Text>
                     </View>
-                    {/* <Button
-                title="Google Sign-In"
-            // onPress={() => onGoogleButtonPress().then(() => console.log('Signed in with Google!'))}
-            /> */}
                 </Row>
                 <Row
                     style={styles.buttons}
                 >
+                    <Text>Welcome {user.email}</Text>
+                    <SignOutScreen />
                     <Button
                         containerStyle={styles.button}
                         title="タップしてスタート"
