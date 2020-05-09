@@ -47,7 +47,7 @@ class App extends React.Component {
       <SafeAreaProvider>
         <NavigationContainer>
           <ErrorBoundary>
-            <Stack.Navigator initialRouteName="Start" headerMode="none">
+            <Stack.Navigator initialRouteName="Home" headerMode="none">
               <Stack.Screen name="Home" component={HomeScreen} />
               <Stack.Screen name="Start">
                 {() => (

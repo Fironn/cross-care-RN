@@ -1,4 +1,5 @@
 import React from 'react';
+import { Text } from 'react-native';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {
@@ -8,7 +9,7 @@ class ErrorBoundary extends React.Component {
 
   static getDerivedStateFromError(error) {
     // Update state so the next render will show the fallback UI.¥
-    console.log(error);
+    // console.log(error);
     return { hasError: true };
   }
 
@@ -21,7 +22,7 @@ class ErrorBoundary extends React.Component {
     if (this.state.hasError) {
       // You can render any custom fallback UI
       console.log("Error!");
-      return <h1>Something went wrong.</h1>;
+      return <Text>Something went wrong.</Text>;
     }
 
     return this.props.children;
